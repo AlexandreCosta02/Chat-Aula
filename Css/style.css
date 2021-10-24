@@ -1,4 +1,18 @@
-#cTitulo{
+body{
+    border: 0;
+}
+
+#corpo{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#ffffff, #ffffff,	#FA8072,#FF0000, #FF0000);
+}
+
+#dTitulo{
     text-align: center;
-    color: red;
+}
+
+#cNome{
+    border: 5px double darkblue;
+
 }
