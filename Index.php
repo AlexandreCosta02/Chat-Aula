@@ -21,6 +21,9 @@
 			<main>
 				<div class="container-fluid">
 					<div class="row">
+						<div class="col-12" id="colUm"></div>
+					</div>
+					<div class="row">
 						<div class="col-xs-4 offset-xs-4 col-sm-4 offset-sm-4 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 col-xxl-4 offset-xxl-4" id="cNome">
 							<div id="dTitulo">
 								<img src="Img/etec.jpg" class="img-fluid">
