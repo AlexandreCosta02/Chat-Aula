@@ -1,0 +1,13 @@
+.chat {
+	width: 80vw;
+	height: 70vh;
+	margin-top: 5vh;
+	margin-left: 10vw;
+	margin-bottom: 5vh;
+	margin-right: 10vw;
+	border: 1px solid red;
+}
+
+.meu{
+	color: purple;
+}

@@ -1,4 +1,14 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chat</title>
+		<link rel="stylesheet" href="Css/chat.css">
+	</head>
+	<body>
+		
+	</body>
+</html>
 
 <?php
 session_start();
@@ -9,23 +19,7 @@ if (!isset($_SESSION['nick'])){
 $conexao = new mysqli("localhost","root","usbw","chat");
 ?>
 
-<style>
-	
-.chat {
-	width: 80vw;
-	height: 70vh;
-	margin-top: 5vh;
-	margin-left: 10vw;
-	margin-bottom: 5vh;
-	margin-right: 10vw;
-	border: 1px solid red;
-}
 
-.meu{
-	color: purple;
-}
-
-</style>
 
 <div class="chat">
 	<?php
