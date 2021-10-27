@@ -41,7 +41,9 @@
 								session_start ();
 									if ($_POST){
 										$nick = $_POST ['nick'];
+										$turma = $_POST ['turma'];
 										$_SESSION['nick'] =  $nick;
+										$_SESSION['turma'] =  $turma;
 										header('location: chat.php');
 										}	
 							?>

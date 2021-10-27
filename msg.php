@@ -1,9 +1,9 @@
 <?php
 	session_start();
-	$conexao = new mysqli("localhost","root","usbw","chat");
+	$conexao = new mysqli("localhost","root","152634152634","eulzfuxx_LOGIN");
 
 	if($_POST){
-	$sql = 'INSERT INTO tb_msg VALUES (null,"'.$_SESSION['nick'].'","'.$_POST['msg'].'")';
+	$sql = 'INSERT INTO tb_msg VALUES (null,"'.$_SESSION['nick'].'","'.$_SESSION['turma'].'","'.$_POST['msg'].'")';
 
 	$resultado = $conexao->query($sql);
 	if(!$resultado){
@@ -11,7 +11,7 @@
 	}
 
 	}else{
-		$sql = 'SELECT origem, mensagem FROM tb_msg';
+		$sql = 'SELECT origem, turma, mensagem FROM tb_msg';
 		$resultado = $conexao->query($sql);
 		while($msg = $resultado->fetch_array()){
 		$cor = ($msg['origem'] == $_SESSION['nick']) ? 'meu' : '';
