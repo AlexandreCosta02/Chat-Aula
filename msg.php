@@ -3,7 +3,7 @@
 	$conexao = new mysqli("localhost","root","usbw","chat");
 
 	if($_POST){
-	$sql = 'INSERT INTO msg VALUES (null,"'.$_SESSION['nick'].'","'.$_POST['msg'].'")';
+	$sql = 'INSERT INTO tb_msg VALUES (null,"'.$_SESSION['nick'].'","'.$_POST['msg'].'")';
 
 	$resultado = $conexao->query($sql);
 	if(!$resultado){
@@ -11,7 +11,7 @@
 	}
 
 	}else{
-		$sql = 'SELECT origem, mensagem FROM msg';
+		$sql = 'SELECT origem, mensagem FROM tb_msg';
 		$resultado = $conexao->query($sql);
 		while($msg = $resultado->fetch_array()){
 		$cor = ($msg['origem'] == $_SESSION['nick']) ? 'meu' : '';

@@ -1,5 +1,4 @@
-CREATE DATABASE chat;
-USE chat; 
+
 CREATE TABLE msg (
 id_msg INT PRIMARY KEY AUTO_INCREMENT,
 origem VARCHAR (40),
