@@ -10,7 +10,7 @@
 	<body>
 	<?php
 		session_start();
-		if(!isset($_SESSION['nick'])){
+		if(!isset($_SESSION['nick','turma'])){
 			header('location: index.php');
 		}
 		$conexao = new mysqli("localhost","root","152634152634","eulzfuxx_LOGIN");
@@ -51,7 +51,6 @@
 		?>
 	</div>
 	<form id="enviar">
-		
 		Mensagem:
 		<textarea name="msg" id="msg"></textarea>
 		<button>Enviar</button>
