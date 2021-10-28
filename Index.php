@@ -1,3 +1,13 @@
+<?php
+	session_start ();
+		if ($_POST){
+			$nick = $_POST ['nick'];
+			$turma = $_POST ['turma'];
+			$_SESSION['nick'] =  $nick;
+			$_SESSION['turma'] =  $turma;
+			header('location: chat.php');
+			}	
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -37,16 +47,7 @@
 									<button id="btnEntrar" class="btn btn-outline-danger">Entrar</button>
 								</div>
 							</form>
-							<?php
-								session_start ();
-									if ($_POST){
-										$nick = $_POST ['nick'];
-										$turma = $_POST ['turma'];
-										$_SESSION['nick'] =  $nick;
-										$_SESSION['turma'] =  $turma;
-										header('location: chat.php');
-										}	
-							?>
+							
 						</div>
 					</div>
 				</div>

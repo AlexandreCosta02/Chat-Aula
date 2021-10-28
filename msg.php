@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$conexao = new mysqli("localhost","root","152634152634","eulzfuxx_LOGIN");
+	$conexao = new mysqli("localhost","eulzfuxx_root","152634152634","eulzfuxx_LOGIN");
 
 	if($_POST){
 	$sql = 'INSERT INTO tb_msg VALUES (null,"'.$_SESSION['nick'].'","'.$_SESSION['turma'].'","'.$_POST['msg'].'")';

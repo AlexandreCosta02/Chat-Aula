@@ -10,10 +10,10 @@
 	<body>
 	<?php
 		session_start();
-		if(!isset($_SESSION['nick','turma'])){
+		if(!isset($_SESSION['nick'])){
 			header('location: index.php');
 		}
-		$conexao = new mysqli("localhost","root","152634152634","eulzfuxx_LOGIN");
+		$conexao = new mysqli("localhost","eulzfuxx_root","152634152634","eulzfuxx_LOGIN");
 	?>
 	<script src="jquery-3.6.0.min.js"></script>
 	<script>
