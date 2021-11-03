@@ -5,9 +5,13 @@
 	margin-left: 10vw;
 	margin-bottom: 5vh;
 	margin-right: 10vw;
-	border: 1px solid red;
+	border: 2px solid red;
+	border-radius: 10px;
+	overflow: auto;
 }
 
 .meu{
 	color: purple;
+	border: 2px solid darkred;
+	border-radius: 5px;
 }
