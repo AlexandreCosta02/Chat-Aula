@@ -16,7 +16,7 @@
 		while($msg = $resultado->fetch_array()){
 		$cor = ($msg['origem'] == $_SESSION['nick']) ? 'meu' : '';
 			echo '<b class="'.$cor.'">';
-			echo $msg['origem'].":</b> ".$msg['mensagem'];
+			echo $msg['origem']." - ".$msg['turma'].": ".$msg['mensagem']." </b>";
 			echo "<br>";
 		}
 	}
