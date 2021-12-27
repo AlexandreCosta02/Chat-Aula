@@ -33,3 +33,18 @@
 	background-color: green;
 	border-radius: 5px;
 }
+
+#barra{
+	background-color: red;
+}
+
+#titulo{
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+
+#sair{
+	color: white;
+	margin-left: 95%;
+}
